@@ -544,7 +544,7 @@ class FogBugz
 
   # resolves a particular case.
   def resolve(id)
-    case_process("resolve",{:ixBug = id},CASE_COLUMNS)
+    case_process("resolve",{:ixBug => id},CASE_COLUMNS)
   end
   
   protected
