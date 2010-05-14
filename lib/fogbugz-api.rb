@@ -541,6 +541,11 @@ class FogBugz
     end
     return_value
   end
+
+  # resolves a particular case.
+  def resolve(id)
+    case_process("resolve",{:ixBug = id},CASE_COLUMNS)
+  end
   
   protected
 
